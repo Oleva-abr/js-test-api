@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #4a4a68;
+  font-family: Open Sans;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: Merriweather;
+  font-size: 20px;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+.search-form {
+  box-sizing: border-box;
+  border-radius: 2px;
+  max-width: 353px;
+  padding: 20px;
+  background-color: #edeff0;
+}
+
+.label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 12px 14px 12px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid #eaeaed;
+  background: #fff;
+  outline: none;
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  background: #0d326c;
+  padding: 13px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+.gallery {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px 24px;
+}
+
+.card {
+  box-sizing: border-box;
+  max-width: 353px;
+  padding: 32px 24px;
+  border-radius: 2px;
+  border: 1px solid rgba(234, 234, 237, 0.5);
+}
+
+.item {
+  margin-top: 16px;
+}
+
+.name {
+  font-family: Merriweather;
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+}
+.icon {
+  fill: #4a4a68;
+  margin-right: 8px;
+}
+@media (min-width: 744px) {
+  .search-form {
+    max-width: 735px;
+    display: flex;
+    gap: 24px;
+  }
+  .card {
+    min-width: 353px;
+  }
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .label {
+    width: 100%;
+  }
+  .button {
+    align-self: center;
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: 1280px) {
+  h2 {
+    text-align: center;
+  }
+  .search-form {
+    width: 864px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .card {
+    min-width: 411px;
+  }
+  .gallery {
+    gap: 48px 23px;
+  }
+}
